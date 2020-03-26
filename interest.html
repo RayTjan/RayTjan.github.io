@@ -6,22 +6,34 @@
     <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Poppins:900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Fredoka+One&display=swap" rel="stylesheet">
+    <script src="http://code.jquery.com/jquery.js" type="text/javascript"></script>
 
-    <title>Interest Ray</title>
+    <title>Interests</title>
 </head>
 <body>
-    <header>
-        <img src="logo.png" id="logo">
+    <header class="laptop">
+        <img src="logo2.png" id="logo">
         <div class="navbar">
             <a href="index.html">home</a>
             <a id="present">interest</a>
             <a href="project.html">projects</a>
             <a href="gallery.html">gallery</a>
             <a href="contact.html">contact</a>
-            <a href="test.html">experiment</a>
         </div>
     </header>
-    
+    <header class="phone">
+        <div class="navhov">
+            <button class="navbutton"><img src="navbar.png" alt=""></button>
+            <img src="logo2.png" id="logo">
+        </div>
+        <div class="navbar">
+            <a href="index.html">home</a>
+            <a id="present">interest</a>
+            <a href="project.html">projects</a>
+            <a href="gallery.html">gallery</a>
+            <a href="contact.html">contact</a>
+        </div>
+    </header>
     <div class="container2">
         <div class="content0">
             <div class="background">
@@ -51,10 +63,13 @@
 
             </div>
             <div class="detail1">
-                <p>Sea Fish</p>
+                <p>Deep Blue</p>
             </div>
             <div class="detail2">
                 <p>Anything related to the ocean I like, the sea is full of wonders and the depth still has a lot to be explored....</p>
+                <div class="presser">
+                    <a href="test.html">More..</a>
+                </div>
             </div>
         </div>
 
@@ -95,5 +110,15 @@
         <p>&copy; 2020</p>
         
     </footer>
+    <script>
+        $(".navbutton").click(
+            function () {
+                $(".phone .navbar").slideToggle("slow");
+                $("header").css("bacground-color","red");
+                $(".phone .navbar").css("display", "block");
+            }
+        )
+
+    </script>
 </body>
 </html>
